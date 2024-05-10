@@ -60,5 +60,32 @@ body {
 }
 #menu {
     height: 8vmax;
-
+}
+#menu {
+    display: flex;    /* el menú és un contenidor de tipus flex */
+    height: 8vmax;
+}
+#menu i{
+    flex: 1;    /* cada botó pretén ocupar tot l'espai disponible */
+    display: flex;    /* contenidor flex on centrar-hi la icona */
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #950E17;
+    font-size: 5vmax;
+    cursor: pointer;    /* en ordinadors, indica que s'hi pot fer clic */
+}
+@media (orientation: landscape) {
+    body {
+        flex-direction: row;    /* sobreescriu la declaració flex-direction: column; */
+        flex-flow: row-reverse;    /* disposició de dreta a esquerra, per mostrar el menú a l'esquerra */
+    }
+    #superior {
+        display: none;    /* franja superior oculta per optimitzar l'espai */
+    }
+    #menu {
+        flex-direction: column;
+        width: 8vmax;
+        height: auto;    /* sobreescriu la declaració height: 8vmax; */
+    }
 }
