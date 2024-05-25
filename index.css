@@ -205,6 +205,20 @@ body {
         height: 70vmin;
     }
 }
+#seccio_6 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#div_diagrama {
+    width: 80vmin;
+    font-size: 5vh;   
+    text-align: center;
+}
+#div_valor {
+    font-size: 15vh; 
+    margin-top: 5vh;  
+}
 #menu {
     display: flex;    /* el menú és un contenidor de tipus flex */
     height: 8vmax;
