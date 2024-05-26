@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/solid.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Descripción de nuestra webapp.">
+    <meta name="description" content="Descripció de la nostra webapp.">
     <title>Nom de la Webbapp</title>
 </head>
 <body>
@@ -15,45 +15,45 @@
     </div>
     <div id="seccio_0" class="seccio">
         <div>
-            Inicio de sesión    <!-- título de la sección -->
+            Inici de sessió    <!-- títol de la secció -->
         </div>
-        <div id="credencials">    <!-- contenedor para los campos de texto -->
+        <div id="credencials">    <!-- contenidor per als quadres de text -->
             <div>
-                <label for="nom_usuari">Nombre de usuario</label>
+                <label for="nom_usuari">Nom d'usuari</label>
                 <input type="text" id="nom_usuari">
             </div>
             <div>
-                <label for="contrasenya">Contraseña</label>
+                <label for="contrasenya">Contrasenya</label>
                 <input type="password" id="contrasenya">
             </div>
         </div>
-        <div id="botons_sessio">    <!-- contenedor para los botones -->
-            <button onclick="inicia_sessio()">Iniciar sesión</button>
-            <button onclick="nou_usuari()">Nuevo usuario</button>
+        <div id="botons_sessio">    <!-- contenidor per als botons -->
+            <button onclick="inicia_sessio()">Inicia sessió</button>
+            <button onclick="nou_usuari()">Nou usuari</button>
         </div>
     </div>
     <div id="seccio_1" class="seccio">
-        Sección 1
+        Secció 1
     </div>
     <div id="seccio_2" class="seccio">
-        Sección 2
-        <div id="div_foto">    <!-- contenedor para la vista previa de la foto tomada -->
+        Secció 2
+        <div id="div_foto">    <!-- contenidor de la vista prèvia de la foto feta -->
             <img id="foto">
-            <i id="icona_camera" class="fa-solid fa-image"></i>    <!-- icono que ocupa el espacio cuando aún no se ha tomado la foto -->
+            <i id="icona_camera" class="fa-solid fa-image"></i>    <!-- icona que ocupa l'espai quan encara no s'ha fet la foto -->
         </div>
-        <div id="div_control">    <!-- contenedor para los botones para tomar y guardar la foto -->
-            <label for="obturador">    <!-- etiqueta auxiliar para ocultar el botón predeterminado -->
-                <i class="fa-solid fa-circle-dot"></i>    <!-- icono del botón para tomar la foto -->
+        <div id="div_control">    <!-- contenidor dels botons per fer i desar la foto -->
+            <label for="obturador">    <!-- etiqueta auxiliar per ocultar el botó predeterminat -->
+                <i class="fa-solid fa-circle-dot"></i>    <!-- icona del botó per fer la foto -->
             </label>
-            <input type="file" accept="image/*" id="obturador" capture="camera" /> <!-- elemento que captura la imagen -->
-            <i id="desa" class="fa-solid fa-check"></i>    <!-- icono del botón para guardar la foto -->
+            <input type="file" accept="image/*" id="obturador" capture="camera" /> <!-- element que captura la imatge -->
+            <i id="desa" class="fa-solid fa-check"></i>    <!-- icona del botó per desar la foto -->
         </div>
     </div>
     <div id="seccio_3" class="seccio">
-        Sección 3
+        Secció 3
     </div>
     <div id="seccio_4" class="seccio">
-        <div id="map" style="height: 400px;"></div> <!-- div para el mapa -->
+        <div id="map" style="height: 400px;"></div> <!-- div per al mapa -->
     </div>
     <div id="menu">      
         <i id="boto_1" class="fa-solid fa-house" onclick="canvia_seccio(1)"></i>     
@@ -61,9 +61,9 @@
         <i id="boto_3" class="fa-solid fa-image" onclick="canvia_seccio(3)"></i>
         <i id="boto_4" class="fa-solid fa-map" onclick="canvia_seccio(4)"></i>
         <i class="fa-solid fa-right-from-bracket" onclick="tanca_sessio()"></i>
-        <i id="boto_5" class="fa-solid fa-brain" onclick="canvia_seccio(5)"></i> <!-- Nueva sección -->
+        <i id="boto_5" class="fa-solid fa-brain" onclick="canvia_seccio(5)"></i> <!-- Nova secció -->
     </div>
-    <script src="app.js"></script> <!-- Agrega el archivo JavaScript -->
+    <script src="app.js"></script> <!-- Afegeix l'arxiu JavaScript -->
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
