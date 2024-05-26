@@ -1,5 +1,5 @@
 html {
-    height: -webkit-fill-available;    /* para dispositivos móviles */
+    height: -webkit-fill-available;    /* per a dispositius mòbils */
 }
 
 body {
@@ -14,7 +14,7 @@ body {
 
 #superior {
     display: flex;
-    height: 8vmax;    /* altura del 8% respecto a la altura de la pantalla */
+    height: 8vmax;    /* altura del 8% respecte a l'altura de la pantalla */
     justify-content: center;
     align-items: center;
     font-size: 4vmax;
@@ -47,7 +47,7 @@ body {
 }
 
 #foto {
-    max-width: 60vmin;    /* dimensiones máximas para la visualización de las fotos */
+    max-width: 60vmin;    /* dimensions màximes per a la visualització de les fotos */
     max-height: 60vmin;
     cursor: pointer;
 }
@@ -125,11 +125,11 @@ body {
     flex: 2;
 }
 
-#llista_titol i:nth-child(2) {    /* segundo <i> (fecha y hora) */
+#llista_titol i:nth-child(2) {    /* segon <i> (data i hora) */
     flex: 3;
 }
 
-#llista_titol i:nth-child(3) {    /* tercer <i> (icono para borrar la foto) */
+#llista_titol i:nth-child(3) {    /* tercer <i> (icona per esborrar la foto) */
     flex: 1;
 }
 
@@ -139,7 +139,7 @@ body {
 }
 
 #llista_fotos::-webkit-scrollbar {
-    display: none;    /* oculta la barra de desplazamiento vertical */
+    display: none;    /* oculta la barra de desplaçament vertical */
 }
 
 #seccio_6 {
@@ -160,34 +160,34 @@ body {
 }
 
 #menu {
-    display: flex;    /* el menú es un contenedor de tipo flex */
+    display: flex;    /* el menú és un contenidor de tipus flex */
     height: 8vmax;
 }
 
 #menu i {
-    flex: 1;    /* cada botón pretende ocupar todo el espacio disponible */
-    display: flex;    /* contenedor flex donde centrar la icona */
+    flex: 1;    /* cada botó pretén ocupar tot l'espai disponible */
+    display: flex;    /* contenidor flex on centrar la icona */
     justify-content: center;
     align-items: center;
     color: white;
     background-color: #950E17;
     font-size: 5vmax;
-    cursor: pointer;    /* en ordenadores, indica que se puede hacer clic */
+    cursor: pointer;    /* en ordinadors, indica que es pot fer clic */
 }
 
 @media (orientation: landscape) {
     body {
-        flex-direction: row;    /* sobrescribe la declaración flex-direction: column; */
-        flex-flow: row-reverse;    /* disposición de derecha a izquierda, para mostrar el menú a la izquierda */
+        flex-direction: row;    /* sobreescriu la declaració flex-direction: column; */
+        flex-flow: row-reverse;    /* disposició de dreta a esquerra, per mostrar el menú a l'esquerra */
     }
 
     #superior {
-        display: none;    /* franja superior oculta para optimizar el espacio */
+        display: none;    /* franja superior oculta per optimitzar l'espai */
     }
 
     #menu {
         flex-direction: column;
         width: 8vmax;
-        height: auto;    /* sobrescribe la declaración height: 8vmax; */
+        height: auto;    /* sobreescriu la declaració height: 8vmax; */
     }
 }
